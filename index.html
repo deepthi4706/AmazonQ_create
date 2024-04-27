@@ -4,80 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Tales</title>
-    <style>
-        /* CSS Styles */
-        body {
-            font-family: Georgia, serif;
-            background-color: #f8f4e5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navigation menu -->
+        </nav>
+    </header>
 
-        header {
-            background-color: #8b4513;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+    <main>
+        <section class="hero">
+            <!-- Hero section -->
+        </section>
 
-        nav {
-            background-color: #deb887;
-            padding: 10px;
-            text-align: center;
-        }
+        <section class="featured-stories">
+            <!-- Featured stories -->
+        </section>
 
-        nav a {
-            color: #333;
-            text-decoration: none;
-            padding: 10px;
-            margin: 5px;
-        }
+        <section class="categories">
+            <!-- Story categories -->
+        </section>
 
-        nav a:hover {
-            background-color: #8b4513;
-            color: #fff;
-        }
+        <section class="articles">
+            <!-- Historical articles -->
+        </section>
 
-        main {
-            padding: 20px;
-        }
+        <section class="discussions">
+            <!-- Discussion forums -->
+        </section>
 
-        section {
-            margin-bottom: 30px;
-        }
+        <section class="author-interviews">
+            <!-- Author interviews -->
+        </section>
+    </main>
 
-        footer {
-            background-color: #8b4513;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
+    <footer>
+        <!-- Footer content -->
+    </footer>
 
-        .story-card {
-            background-color: #fff;
-            border: 1px solid #deb887;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
+    <script src="script.js"></script>
+</body>
+</html>
 
-        .story-card img {
-            max-width: 100%;
-            height: auto;
-        }
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        .form-group {
-            margin-bottom: 20px;
-        }
+/* Typography */
+body {
+    font-family: 'Georgia', serif;
+    color: #333;
+}
 
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
 
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            I'm sorry, I am unable to respond further. Perhaps we could find another topic to discuss?
+/* Layout */
+header {
+    background-color: #f2e9e1;
+    padding: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+<form id="registration-form">
+    <h2>Register</h2>
+    <input type="text" placeholder="Username" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Register</button>
+</form>
+
+const form = document.getElementById('registration-form');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const username = form.elements[0].value;
+    const email = form.elements[1].value;
+    const password = form.elements[2].value;
+
+    // Here, you can send the registration data to your server
+    // using an AJAX request or fetch API
+
+    // Reset the form
+    form.reset();
+});
